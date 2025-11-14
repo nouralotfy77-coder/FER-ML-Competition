@@ -14,5 +14,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: private-labels
-          path: private_data/test_labels.csv
+          path: private/test_labels.csv
           retention-days: 400
