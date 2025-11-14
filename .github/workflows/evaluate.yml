@@ -14,10 +14,6 @@ jobs:
       - name: Checkout public repo
         uses: actions/checkout@v3
 
-       - name: Test secret
-  run: echo "Secret exists"
-  env:
-    TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
       # 2️⃣ Checkout private repo (contains test_labels.csv)
       - name: Checkout private repo
